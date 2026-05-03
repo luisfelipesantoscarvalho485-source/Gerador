@@ -39,11 +39,10 @@ async function gerarCodigo() {
     let blocoCodigo = document.querySelector(".bloco-codigo")
     let resultadoCodigo = document.querySelector(".resultado-codigo")
 
-    let resposta = await fetch(endereco, {
+    let resposta = await fet("http://localhost:3000/gerar", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-            "Authorization": "Bearer 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"
         },
         body: JSON.stringify({
             model: "openai/gpt-oss-120b",
