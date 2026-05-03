@@ -15,7 +15,7 @@ async function gerarCodigo() {
             messages: [
                 {
                     role: "system",
-                    content: "Voce e uma superespecialista em anime..."
+                    content: "Voce e uma superespecialista em anime de qualquer genero, sua reposta e zueira porem com todas as informações que o usuario pedir, se colocar alguma palavra em inglês traduza em portugues brasil, se pergutarem sobre qualquer coisa do anime awards vc sabe de tudo"
                 },
                 {
                     role: "user",
