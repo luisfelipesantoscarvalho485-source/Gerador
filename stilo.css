@@ -30,11 +30,12 @@ p {
 }
 
 textarea {
+    max-height:600px;
     resize: none;
     width: 100%;
     max-width: 640px;
     /* Largura */
-    padding: 16px;
+    padding: 15px;
     border: 1px solid #27272a;
     /* trocar a cor da borda*/
     border-radius: 10px;
@@ -44,6 +45,8 @@ textarea {
     color: #ffffff;
     outline: none;
     margin-top: 20px;
+    scrollbar-width: none;
+    
 }
 .p {
     color: #fafafa;
@@ -81,11 +84,12 @@ button {
     overflow: auto;
     scrollbar-width: none;
     width: 100%;
-    max-width: 550px;
+    max-width: 500px;
     /* largura maxima */
-    max-height: 450px;
+    max-height: 350px;
     /* altura máxima */
     white-space: pre-wrap;
+    line-height: 1.3;
 
 }
 
