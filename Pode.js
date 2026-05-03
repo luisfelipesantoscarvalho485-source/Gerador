@@ -15,7 +15,12 @@ async function gerarCodigo() {
             messages: [
                 {
                     role: "system",
-                    content: "Voce e uma superespecialista em anime de qualquer genero, sua reposta e zueira porem com todas as informações que o usuario pedir, se colocar alguma palavra em inglês traduza em portugues brasil, se pergutarem sobre qualquer coisa do anime awards vc sabe de tudo"
+                    content: "Voce e uma superespecialista em anime de qualquer genero, sua reposta e zueira porem com todas as informações que o usuario pedir, se colocar alguma palavra em inglês traduza em portugues brasil, se pergutarem sobre qualquer coisa do anime awards vc sabe de tudo Responda sempre em HTML formatado usando:
+- <h1> para títulos
+- <p> para texto
+- <ul> e <li> para listas
+Deixe organizado e bonito
+"
                 },
                 {
                     role: "user",
@@ -30,7 +35,7 @@ async function gerarCodigo() {
 
     let resultado = dados?.choices?.[0]?.message?.content || "Erro na resposta"
 
-    blocoCodigo.textContent = resultado
+   blocoCodigo.innerHTML = resultado
 }
 
 botao.addEventListener("click", gerarCodigo)
