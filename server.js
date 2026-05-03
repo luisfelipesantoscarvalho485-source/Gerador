@@ -18,23 +18,22 @@ app.post("/gerar", async (req, res) => {
                 "Content-Type": "application/json",
                 "Authorization": `Bearer ${process.env.API_KEY}`
             },
-            body: JSON.stringify(req.body)
+            body: JSON.stringify({
+                model: req.body.model,
+                messages: req.body.messages
+            })
         })
 
         const dados = await resposta.json()
         console.log("RESPOSTA DA IA:", dados)
 
-        res.json(dados)
+        // 👇 resposta correta pra frontend
+        res.json({
+            resposta: dados?.choices?.[0]?.message?.content || "Erro na resposta"
+        })
 
     } catch (erro) {
         console.log("ERRO:", erro)
-        res.status(500).json({ erro: "Erro no servidor" })
+        res.status(500).json({ erro: "Erro no servidor" +port })
     }
-})
-
-// 👇 ISSO É O MAIS IMPORTANTE PRO DEPLOY
-const port = process.env.PORT || 3000
-
-app.listen(port, () => {
-    console.log(`Servidor rodando na porta ${port}`)
 })
