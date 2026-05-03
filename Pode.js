@@ -37,7 +37,6 @@ async function gerarCodigo() {
 
     let textoUsuario = document.querySelector(".caixa-texto").value
     let blocoCodigo = document.querySelector(".bloco-codigo")
-    let resultadoCodigo = document.querySelector(".resultado-codigo")
 
     let resposta = await fetch("http://localhost:3000/gerar", {
         method: "POST",
@@ -49,7 +48,7 @@ async function gerarCodigo() {
             messages: [
                 {
                     role: "system",
-                    content: "Voce e uma superespecialista em anime  QUALQUER TIPO DE ANIME e suas responsta sao brincalhonas porem objetivas e deixe tudo organizado(como diferenciar as letras de titulos e das explicaçoes) caso use ingles ajude na tradução para português brasil. voce sabe tudo sobre premios indenpendente do ano, voce tem um conhecimento super atualizado sobre animes e seus premios. responda de forma brincalhona e divertida"
+                    content: "Voce e uma superespecialista em anime de qualquer genero, vode responde de uma forma de zueira mas com todas as informações pedidas, se usar inglês traduza em português brasil para que o usuario entenda, e se perguntarem alguma coisa relacioanada ao animeawards vc sabe de tudo"
                 },
                 {
                     role: "user",
@@ -58,6 +57,13 @@ async function gerarCodigo() {
             ]
         })
     })
+
+    let dados = await resposta.json()
+    let resultado = dados.choices[0].message.content
+
+    blocoCodigo.textContent = resultado
+}
+
 
     let dados = await resposta.json()
     let resultado = dados.choices[0].message.content
