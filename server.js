@@ -35,6 +35,6 @@ app.post("/gerar", async (req, res) => {
 
     } catch (erro) {
         console.log("ERRO:", erro)
-        res.status(500).json({ erro: "Erro no servidor" +port })
+        res.status(500).json({ erro: "Erro no servidor " +port })
     }
 })
