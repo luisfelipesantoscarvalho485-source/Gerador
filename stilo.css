@@ -140,6 +140,12 @@ button {
         display:flex;
         justify-content:center;
     }
+    .cima{
+    display: block;
+    justify-items: center;
+    
+}
+    
 
 
     
