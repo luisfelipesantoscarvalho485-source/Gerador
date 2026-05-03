@@ -8,6 +8,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
+
 app.post("/gerar", async (req, res) => {
     console.log("CHEGOU NO BACKEND:", req.body)
 
