@@ -76,7 +76,7 @@ button {
     background: #141419;
     border: 1px solid #27272a;
     border-radius: 12px;
-    padding: 16px;
+    padding: 10px;
     font-size: 17px;
     font-weight: bold;
     color: #08f500;
@@ -90,6 +90,8 @@ button {
     /* altura máxima */
     white-space: pre-wrap;
     line-height: 1.3;
+    text-align: center;
+    font-weight: 500;
 
 }
 
