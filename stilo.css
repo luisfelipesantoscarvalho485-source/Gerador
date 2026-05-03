@@ -135,6 +135,12 @@ button {
         margin-left: 29px;
     }
 
+    .botao-gerar{
+        color:black;
+        display:flex;
+        justify-content:center;
+    }
+
 
     
 }
