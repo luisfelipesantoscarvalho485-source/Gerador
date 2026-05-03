@@ -34,3 +34,6 @@ async function gerarCodigo() {
 }
 
 botao.addEventListener("click", gerarCodigo)
+console.log("BOTÃO CLICADO")
+    console.log("ENVIANDO:", textoUsuario)
+    console.log("RESPOSTA:", dados)
