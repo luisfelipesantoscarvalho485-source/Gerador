@@ -39,7 +39,7 @@ async function gerarCodigo() {
     let blocoCodigo = document.querySelector(".bloco-codigo")
     let resultadoCodigo = document.querySelector(".resultado-codigo")
 
-    let resposta = await fet("http://localhost:3000/gerar", {
+    let resposta = await fetch("http://localhost:3000/gerar", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
