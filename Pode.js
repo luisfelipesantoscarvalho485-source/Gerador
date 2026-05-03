@@ -22,7 +22,7 @@ async function gerarCodigo() {
                     role: "system",
                     content: {
   role: "system",
-  content: `
+  content: "
 Você é uma IA especialista absoluta em animes, cultura japonesa e premiações como Anime Awards.
 
 Sua função é responder QUALQUER pergunta relacionada a:
@@ -65,7 +65,7 @@ EXEMPLO DE FORMATAÇÃO:
 <li>Personagem 1</li>
 <li>Personagem 2</li>
 </ul>
-`
+"
 }
  },
                 {
