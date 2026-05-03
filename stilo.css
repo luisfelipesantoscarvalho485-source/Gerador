@@ -81,9 +81,9 @@ button {
     overflow: auto;
     scrollbar-width: none;
     width: 100%;
-    max-width: 350px;
+    max-width: 550px;
     /* largura maxima */
-    max-height: 350px;
+    max-height: 450px;
     /* altura máxima */
     white-space: pre-wrap;
 
