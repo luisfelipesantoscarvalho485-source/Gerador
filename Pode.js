@@ -19,8 +19,6 @@ async function gerarCodigo() {
             model: "openai/gpt-oss-120b",
             messages: [
                 {
-                    role: "system",
-                    content: {
   role: "system",
   content: 
 "Você é uma IA especialista absoluta em animes, cultura japonesa e premiações como Anime Awards.
