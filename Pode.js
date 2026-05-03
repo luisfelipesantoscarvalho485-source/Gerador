@@ -36,7 +36,7 @@ blocoCodigo.innerHTML = resultado
 let dados = await resposta.json()
 console.log(dados)
 
-let resultado = dados?.choices?.[0]?.message?.content || "Erro na resposta"
+let resultado = dados.resposta
 
 blocoCodigo.innerHTML = resultado
 
