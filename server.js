@@ -12,6 +12,7 @@ app.get("/", (req, res) => {
     res.send("API rodando 🚀")
 })
 
+
 app.post("/gerar", async (req, res) => {
     try {
         console.log("REQ RECEBIDO:", req.body)
