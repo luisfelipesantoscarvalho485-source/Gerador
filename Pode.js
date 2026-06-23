@@ -3,6 +3,7 @@ let botao = document.querySelector(".botao-gerar")
 botao.addEventListener("click", gerarCodigo)
 
 async function gerarCodigo() {
+    
 
     let textoUsuario = document.querySelector(".caixa-texto").value
     let blocoCodigo = document.querySelector(".bloco-codigo")
